@@ -1,0 +1,9 @@
+table {
+    width: 50%;
+    text-align: center;
+}
+
+tr th {
+    background-color: red;
+    color: white;
+}
