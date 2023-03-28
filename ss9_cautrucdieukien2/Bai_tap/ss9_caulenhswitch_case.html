@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch_case</title>
+</head>
+<body>
+    <form>
+        <input id = "month" type="text" size = "10">
+        <input type="button" value="Tính số ngày" onclick="Show()">
+    </form>
+
+    <script>
+        function Show() {
+            var month = parseInt(document.getElementById("month").value);
+            var soNgay;
+            switch (month) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    soNgay = document.write("Tháng " + month + " có 31 ngày");
+                    break;
+                case 2: 
+                    soNgay = document.write("Tháng " + month + " có 28 hoặc 29 ngày");
+                    break;
+                case 4: 
+                case 6: 
+                case 9:
+                case 11:
+                    soNgay = document.write("Tháng " + month + " có 30 ngày");
+                    break;
+                default: 
+                    soNgay = "Tháng không hợp lệ"
+
+            }
+        }
+    </script>
+</body>
+</html>

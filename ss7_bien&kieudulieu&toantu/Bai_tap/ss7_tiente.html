@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiền tệ</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <form>
+                <td><input type="number" id="amount"></td>
+                <td>
+                    <select name="" id="currency">
+                        <option value="VietNam">Việt Nam</option>
+                        <option value="Mỹ">Mỹ</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="vnd">VNĐ</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="button" value="Convert" onclick="show()">
+                </td>
+            </form>
+        </tr>
+
+    </table>
+    <p id="result">Result</p>
+    <script>
+        function show() {
+            var amount1 = document.getElementById("amount").value;
+            var currency1 = document.getElementById("currency").value;
+            var result1 = document.getElementById("result");
+
+            if (currency1 == "Mỹ") {
+                result1 = amount1 + " USD là " + amount1*23000 + " VNĐ";
+            } else {
+                result1 = amount1 + " VNĐ là " + amount1/23000 + " VNĐ";
+            }
+            document.getElementById("result").innerHTML = result1;
+        }
+    </script>
+</body>
+</html>

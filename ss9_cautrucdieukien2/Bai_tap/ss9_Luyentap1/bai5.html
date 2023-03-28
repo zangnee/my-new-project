@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 5</title>
+</head>
+<body>
+    <script>
+        var k_tra = parseFloat(prompt("Nhập điểm kiểm tra: "));
+        var g_ki = parseFloat(prompt("Nhập điểm giữa kì: "));
+        var c_ki = parseFloat(prompt("Nhập điểm cuối kì: "));
+
+        var dTbinh = (k_tra + g_ki + c_ki)/3;
+        if (dTbinh > 9) {
+            document.write("Hạng xuất sắc");
+        } else if (dTbinh > 9) {
+            document.write("Hạng giỏi");
+        } else if (dTbinh > 8) {
+            document.write("Hạng khá");
+        } else if (dTbinh > 6.4) {
+            document.write("Hạng Trung Bình");
+        } else if (dTbinh > 5){
+            document.write("Hạng Yếu");
+        } else {
+            document.write("Hạng kém");
+        }
+    </script>
+</body>
+</html>

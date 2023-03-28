@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoa hồng</title>
+</head>
+<body>
+    <script>
+        var sales = parseInt(prompt("Nhập doanh thu vào"));
+        var revenue; 
+        
+        if(sales < 100000000) {
+            revenue = sales * 0.05;
+        } else if ( sales < 500000000) {
+            revenue = 5000000 + (sales - 100000000) * 0.1;
+        } else {
+            revenue = 45000000 + (sales - 500000000) * 0.2;
+        }
+        document.write("Hoa hồng nhận được là: " + revenue);
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính</title>
+</head>
+<body>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <br><br>
+    <button onclick="add()">Addiiton(+)</button>
+    <button onclick="subtract()">subtraction(-)</button>
+    <button onclick="multiply()">Multiplication(*)</button>
+    <button onclick="divide()">Division(/)</button>
+    <br><br>
+    <input type="number" id="result">
+</body>
+
+<script>
+    function add() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        document.getElementById("result").value = num1 + num2;
+    }
+
+    function subtract() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        document.getElementById("result").value = num1 - num2;
+    }
+
+    function multiply() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        document.getElementById("result").value = num1 * num2;
+    }
+
+    function divide() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        document.getElementById("result").value = num1 / num2;
+    }
+</script>
+</html>
