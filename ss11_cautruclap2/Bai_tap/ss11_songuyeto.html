@@ -8,28 +8,24 @@
 </head>
 <body>
     <script>
-        function isPrime(n) {
-  if (n <= 1) {
-    return false;
-  }
-  for (let i = 2; i <= Math.sqrt(n); i++) {
-    if (n % i === 0) {
-      return false;
+    var numbers = prompt("Nhập số lượng số nguyên tố cần in ra:");
+    var count = 0;
+    var N = 2;
+
+    while (count < numbers) {
+    var isPrime = true;
+        for (var i = 2; i <= Math.sqrt(N); i++) {
+            if (N % i === 0) {
+            isPrime = false;
+            break;
+        }
     }
-  }
-  return true;
-}
-
-let count = 0;
-let num = 2;
-
-while (count < 20) {
-  if (isPrime(num)) {
-    console.log(num);
-    count++;
-  }
-  num++;
-}
+        if (isPrime) {
+        document.write(N);
+        count++;
+    }
+        N++;
+    }
     </script>
 </body>
 </html>
