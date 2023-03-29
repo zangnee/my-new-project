@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var total = 0;
+        while (true) {
+            var a = parseInt(prompt("Nhập -1 để kết thúc: "));
+            if (a === -1) {
+            break;
+        }
+            document.write(" Số bạn vừa nhập là: " + a + "</br>");
+            total += a;
+        }
+
+        document.write(" Tổng các số bạn đã nhập là: " + total);
+    </script>
+</body>
+</html>
