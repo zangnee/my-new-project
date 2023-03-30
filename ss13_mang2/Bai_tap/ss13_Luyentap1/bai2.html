@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giá trị lớn nhất và in ra</title>
+</head>
+<body>
+    <script>
+        var arr = [2, 8, 11, 19, 23, 40, 12, 4, 6, 20];
+        var max = arr[0];
+        var index = 0;
+
+        for(var i = 1; i <= arr.length; i++) {
+            if(arr[i] > max) {
+                max = arr[i];
+                index = i;
+            }
+        }
+
+        console.log("Giá trị lớn nhất là " + max + " tại vị trí " + index);
+    </script>
+</body>
+</html>
