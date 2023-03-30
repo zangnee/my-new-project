@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 11</title>
+</head>
+<body>
+    <script>
+        var thu_Nhap = parseFloat(prompt("Nhập thu nhập cá nhân:")); 
+        var tien_Thue;
+        if(isNaN(thu_Nhap)) {
+            document.write("Vui lòng chỉ nhập số");
+        } else if (thu_Nhap <= 0) {
+            document.write("Thu nhập phải lớn hơn 0");
+        } else if (thu_Nhap < 50000000) {
+            tien_Thue = thu_Nhap * 0.05;
+        } else if (thu_Nhap < 100000000) {
+            tien_Thue = thu_Nhap * 0.1;
+        } else if (thu_Nhap < 150000000) {
+            tien_Thue = thu_Nhap * 0.15;
+        } else if (thu_Nhap < 200000000) {
+            tien_Thue = thu_Nhap * 0.2;
+        } else {
+            tien_Thue = thu_Nhap * 0.25;
+        }
+        document.write("Tiền thuế cá nhân là: " + tien_Thue);
+        
+    </script>
+</body>
+</html>

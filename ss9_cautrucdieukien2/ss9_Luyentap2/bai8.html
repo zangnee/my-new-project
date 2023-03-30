@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 8</title>
+</head>
+<body>
+    <script>
+        var so_Tuoi = parseInt(prompt("Nhập số tuổi vào: "));
+        if(isNaN(so_Tuoi)) {
+            document.write("Đây không phải số tuổi");
+        } else if(so_Tuoi < 0 || so_Tuoi > 120) {
+            document.write("Đây không phải là số tuổi của một người");
+        } else {
+            document.write(so_Tuoi + " là số tuổi của một người")
+        }
+    </script>
+</body>
+</html>

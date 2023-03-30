@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 12</title>
+</head>
+<body>
+    <script>
+        var tien_Goc = parseFloat(prompt("Nhập số tiền gốc"));
+        var lai_Suat = parseFloat(prompt("Nhập số lãi suất hàng tháng"));
+        var so_Thang = parseFloat(prompt("Nhập số tháng"));
+        var tong_Tien = tien_Goc * (Math.pow(1+lai_Suat, so_Thang) - 1);
+
+        if(isNaN(tien_Goc) || isNaN(lai_Suat) || isNaN(so_Thang)) {
+            document.write("Yêu cầu chỉ nhập số");
+        } else if(tien_Goc <= 0 || lai_Suat <= 0 || so_Thang <= 0) {
+            document.write("Nhập số phải lớn hơn 0");
+        } else {
+            document.write("Tổng tiền là: " + tong_Tien);
+        }
+    </script>
+</body>
+</html>

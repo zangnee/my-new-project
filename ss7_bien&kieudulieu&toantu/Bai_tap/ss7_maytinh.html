@@ -15,7 +15,7 @@
     <button onclick="multiply()">Multiplication(*)</button>
     <button onclick="divide()">Division(/)</button>
     <br><br>
-    <input type="number" id="result">
+    <input type="text" id="result">
 </body>
 
 <script>
@@ -40,7 +40,11 @@
     function divide() {
         var num1 = parseFloat(document.getElementById("num1").value);
         var num2 = parseFloat(document.getElementById("num2").value);
+        if (num2 === 0) {
+        document.getElementById("result").value = "Không chia được";
+        } else {
         document.getElementById("result").value = num1 / num2;
+        }
     }
 </script>
 </html>

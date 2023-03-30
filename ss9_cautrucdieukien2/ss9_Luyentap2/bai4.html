@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hình chữ nhật</title>
+</head>
+<body>
+    <script>
+        var a = parseFloat(prompt("Nhập vào cạnh a"));
+        var b = parseFloat(prompt("Nhập vào cạnh b"));
+        if(isNaN(a) || isNaN(b)) {
+            document.write("Vui lòng chỉ nhập số");
+        } else if(a <= 0 || b <= 0) {
+            document.write("Số phải lớn hơn 0");
+        } else {
+            document.write("Diện tích hình chữ nhật là: " + a*b);
+        }
+    </script>
+</body>
+</html>
