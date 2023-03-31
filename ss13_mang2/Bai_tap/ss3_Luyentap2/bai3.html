@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đếm số</title>
+</head>
+<body>
+    <script>
+        var arr = ['a', '1', 'c', 'd', '5', 'f', '8'];
+        var count = 0;
+
+        for(var i = 0; i < arr.length; i++) {
+            if(!isNaN(arr[i])) {
+                count++
+            }
+        }
+        console.log("Số ký tự só là: " + count);
+    </script>
+</body>
+</html>
