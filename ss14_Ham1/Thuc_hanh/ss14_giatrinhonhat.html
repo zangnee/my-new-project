@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>giá trị nhỏ nhất </title>
+</head>
+<body>
+    <script>
+        function gTNN(arr) {
+            if(arr.length === 0) {
+                return undefined;
+            }
+            return Math.min(...arr);
+        }
+        var arr1 = [3, 5, 1, 8, -3, 7, 8];
+        var arr2 = [7, 12, 6, 9, 20, 56, 89];
+        var arr3 = [];
+        var arr4 = [0, 0, 0, 0, 0, 0];
+
+        console.log(gTNN(arr1)); 
+        console.log(gTNN(arr2)); 
+        console.log(gTNN(arr3)); 
+        console.log(gTNN(arr4));    
+    </script>
+</body>
+</html>
