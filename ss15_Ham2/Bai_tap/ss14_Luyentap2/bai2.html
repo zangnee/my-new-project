@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diện tích, chu vi hình tròn</title>
+</head>
+<body>
+    <script>
+        var ban_kinh = parseInt(prompt("Nhập bán kính vào"));
+        var PI = 3.14;
+        function dienTich() {
+            return Math.pow(ban_kinh, 2) * PI;
+        }
+        function chuVi() {
+            return (2*ban_kinh) * PI;
+        }
+        console.log("Diện tích hình tròn là: " + dienTich());
+        console.log("Chu vi hình trong là: " + chuVi());
+    </script>
+</body>
+</html>

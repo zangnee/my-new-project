@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var start = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair",
+                    "Dubhe", "Regulus"];
+        var constellations = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", 
+                            "Aquila", "Ursa", "Major", "Leo"]
+
+        function findConstellation(starName) {
+            for (var i = 0; i < stars.length; i++) {
+                if (stars[i] === starName) {
+                return constellations[i];
+                }
+            }
+            return null;
+        } 
+
+        var starName = prompt("Nhập tên ngôi sao: ");
+
+        var constellationName = findConstellation(starName);
+
+        if (constellationName !== null) {
+        alert("Ngôi sao " + starName + " nằm trong chòm sao " + constellationName);
+        } else {
+        alert("Không tìm thấy ngôi sao");
+        }
+    </script>
+</body>
+</html>

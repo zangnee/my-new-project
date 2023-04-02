@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đổi chỗ</title>
+</head>
+<body>
+    <script>
+        var num1 = prompt("Nhập số đầu tiên");
+        var num2 = prompt("Nhập số thứ hai");
+        console.log("Giá trị của a trước khi đổi chỗ: " + num1);
+        console.log("Giá trị của b trước khi đổi chỗ: " + num2);
+        function doi_cho(a, b) {
+            var temp = a;
+            a = b;
+            b = temp;
+            console.log("Giá trị của a sau khi đổi chỗ là: " + a);
+            console.log("Giá trị của b sau khi đổi chỗ là: " + b);
+        }
+
+        doi_cho(num1, num2);
+    </script>
+</body>
+</html>

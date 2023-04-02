@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tăng giá trị lên 1</title>
+</head>
+<body onload="showResult()">
+
+    <script>
+        function increaseNumber(num) {
+            return num + 1;
+        }
+
+        function showResult() {
+            var num = parseInt(prompt("Nhập num vào: "));
+            var increasedNum  = increaseNumber(num);
+            alert("Số tăng lên 1 là " + increasedNum);
+        }
+    </script>
+</body>
+</html>
